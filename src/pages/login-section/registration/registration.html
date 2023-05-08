@@ -73,9 +73,9 @@
 
                         <ion-item class="cs-input"
                             [ngClass]="{'error':f.submitted && gst_number?.invalid || gst_number.errors?.pattern}">
-                            <ion-label floating>{{'VAT Number (optional)' | translate}}</ion-label>
+                            <ion-label floating>{{'VAT Number' | translate}}*</ion-label>
                             <ion-input type="text" id="gst_number" name="gst_number" #gst_number="ngModel"
-                                [(ngModel)]="data.gst_number" >
+                                [(ngModel)]="data.gst_number" required >
                                 <!-- minlength="10" maxlength="10"
                                 pattern="^[A-z]{2}[0-9]{7}[A-z]{1}$" -->
                             </ion-input>
@@ -280,7 +280,7 @@
                         <ion-input type="text"  name="ifsc_code " #ifsc_code ="ngModel" [(ngModel)]="data.ifsc_code"  pattern="^[A-z]{4}[0][A-z0-9]{6}$" maxlength="11" minlength="11" ></ion-input>
                    
                     </ion-item>	
-                    <p class="alert-line" *ngIf="ifsc_code.errors?.pattern">{{'Invaild IFSC Code'   | translate}}</p>
+                    <p class="alert-line" *ngIf="ifsc_code.errors?.pattern">{{'Invalid IFSC Code'   | translate}}</p>
 
 
 

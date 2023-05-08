@@ -21,7 +21,12 @@
         <button ion-item>
 			<div class="main-bx">
 				<div class="bx-left">
-					<img src={{upload_url+list.image[0].image_name}}>
+					<!-- <img src={{upload_url+list.image[0].image_name}}> -->
+                <img [src]="upload_url+list.image[0].image_name" *ngIf=" list.image.length==1">
+                <img src="assets/imgs/default-image.png" *ngIf="!list.image.length">
+
+					<!-- <img src={{upload_url+list.image_name}}> -->
+
                     <!-- <img src="assets/imgs/default-image.png" *ngIf="!list.image.length"> -->
 				</div>
              
