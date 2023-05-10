@@ -1343,6 +1343,8 @@ display: flex;
     }
 }
 
+
+
 .fix {
     position: sticky;
     top: 0;
@@ -1350,7 +1352,7 @@ display: flex;
     z-index: 1;
     padding:0px 0px 16px 0px;;
     display: block;
-    background: #fff;
+    background: #e9111c;
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -5053,4 +5055,9 @@ pinch-zoom.pinch-big_zoom div {
         text-align: center;
         padding: 20px 60px !important;
     }
+}
+
+
+.mt10{
+    margin-top: 10px;
 }
